@@ -1,0 +1,42 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-title{
+    font-family: 'Pacifico', cursive;
+}
+
+header,
+ul .nav-item .nav-link,
+#menu .nav-pills .nav-link.active{
+   background-color: #bf81be;
+   color: white;
+}
+
+.nav-pills .nav-link.active{
+    background-color: white;
+    color: #bf81be;
+}
+
+.text-colored,
+#menu button,
+#menu button:hover {
+    color: #bf81be;
+}
+
+#pizzariaPlace{
+    max-height: 302px;
+}
+
+.carousel-item img{
+    max-height: 420px;
+}
+
+.about,
+#menu{
+    background-color: #9c6b9925;
+}
+
+#social-links li a{
+    cursor: pointer;
+}

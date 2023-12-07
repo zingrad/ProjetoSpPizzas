@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>SP Pizzas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar com menu hamburguer finalizado  Falta colocar o SPY-->
+  <header id="cabecalho" class="p-4 navbar sticky-top">
+    <div class="container navbar-expand-lg">
+      <h1 class="h4 section-title ">SP Pizzas</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse">
+        <ul class="nav nav-pills fw-bold d-block d-md-flex w-100 justify-content-end">
+          <li class="nav-item mt-3 mt-md-0">
+            <a href="#about" class="nav-link active">Sobre a pizzaria</a>
+          </li>
+          <li class="nav-item">
+            <a href="#events" class="nav-link">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu" class="nav-link">Nosso cardápio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contato</a>
+          </li>
+      </nav>
+    </div>
+  </header>
+  <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" >
+    <!-- Sobre -->
+  <section id="about">
+    <div id="carouselPizza" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselPizza" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselPizza" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselPizza" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imagens/Slides/slide1.jpg" class="d-block w-100" alt="Pizza Calabresa">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagens/Slides/slide2.jpg" class="d-block w-100" alt="Pizza calabresa com queijo">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagens/Slides/slide3.jpg" class="d-block w-100" alt="Pizza">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselPizza" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselPizza" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container pt-5 pb-5">
+      <div class="row">
+        <div class="col-md-5">
+          <img id="pizzariaPlace" class="w-100 rounded" src="./imagens/pizzaria.jpg" alt="Espaço do restaurante">
+        </div>
+        <div class="col-md-7">
+          <div class="row">
+            <h3 class="section-title">Sobre <span class="text-colored">a Pizzaria</span></h3>
+            <p>Nossa pizzaria é apaixonada por proporcionar experiências gastronômicas únicas, oferecendo pizzas
+              artesanais feitas com ingredientes frescos e de alta qualidade. Valorizamos a tradição italiana e
+              buscamos inovar em cada sabor que servimos.
+            </p>
+          </div>
+          <div class="row">
+            <h3 class="section-title">Sobre <span class="text-colored"> o espaço</span></h3>
+            <p>Nosso espaço foi projetado para proporcionar um ambiente acolhedor e agradável. Com uma decoração
+              única, combinada com música ambiente, criamos o cenário perfeito para que você desfrute não apenas de
+              deliciosas pizzas, mas também de momentos especiais com amigos e familiares.
+            </p>
+            <ul class="ms-5">
+              <li>Ampla variedade de pizzas artesanais</li>
+                <li>Ambiente descontraído e amigável</li>
+                <li>Equipe dedicada e atenciosa</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Eventos -->
+  <section id="events" class=" pt-5 pb-5 container">
+    <div class="row pb-4">
+      <h2 class="section-title text-center">Para todas as ocasiões</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="./imagens/eventos/aniversario.jpg" class="w-100" alt="Cupcakes de aniversário">
+        <h3 class="mt-2 text-colored section-title">
+          <i class="bi bi-calendar-heart-fill">
+          </i>
+          Aniversários
+        </h3>
+        <p>Nossas pizzas são a escolha perfeita para celebrar aniversários. Com uma variedade de sabores deliciosos,
+          garantimos que cada mordida seja uma experiência inesquecível. Deixe-nos fazer parte do seu dia especial!</p>
+      </div>
+      <div class="col-md-4">
+        <img src="./imagens/eventos/casamento.jpg" class="w-100" alt="Cupcakes de aniversário">
+        <h3 class="mt-2 text-colored section-title">
+          <i class="bi bi-arrow-through-heart-fill"></i>
+          Recepsão para casamentos
+        </h3>
+        <p>Celebre o amor com nossas deliciosas pizzas em sua recepção de casamento. Oferecemos opções personalizadas e
+          saborosas que certamente encantarão todos os seus convidados.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="./imagens/eventos/confraternizacoes.jpg" class="w-100" alt="Cupcakes de aniversário">
+        <h3 class="mt-2 text-colored section-title">
+          <i class="bi bi-people-fill">
+          </i>
+          Confraternizações
+        </h3>
+        <p>Nossas pizzas são a escolha ideal para confraternizações. Seja uma festa da empresa ou encontro com amigos,
+          oferecemos uma seleção de sabores que agradarão a todos os paladares. Faça sua confraternização ainda mais
+          especial conosco!</p>
+      </div>
+    </div>
+  </section>
+  <section id="menu" class=" pt-5 pb-5">
+    <h2 class="text-center section-title">Nosso <span class="text-colored">cardápio</span> </h2>
+    <div class="d-md-flex align-items-start container  mt-4 ">
+      <div class="nav w-sm-100  flex-column nav-pills col-md-3 col-lg-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button class="nav-link fw-bold active" id="v-pills-profile-tab" data-bs-toggle="pill"
+          data-bs-target="#bebidasSemAlcool" type="button" role="tab">Bebidas não alcoólicas</button>
+        <button class="nav-link fw-bold" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#bebidasComAlcool"
+          type="button" role="tab">Bebidas Alcoólicas</button>
+        <button class="nav-link fw-bold" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#entradas" type="button"
+          role="tab">Entradas</button>
+        <button class="nav-link fw-bold" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pratosPrincipais"
+          type="button" role="tab">Pratos principais</button>
+        <button class="nav-link fw-bold" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#sobremesa"
+          type="button" role="tab">Sobremesa</button>
+      </div>
+      <div class="tab-content ms-4" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="bebidasSemAlcool" role="tabpanel" tabindex="0">
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <img src="./imagens/cardapio/bebidas/suco.jpg" class="w-100 rounded">
+              <h3 class='h4 mt-2 fw-bold text-colored'>Suco</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugit tempora necessitatibus commodi facilis! Illo quibusdam atque delectus, sit rem cupiditate et.</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <img src="./imagens/cardapio/bebidas/suco.jpg" class="w-100 rounded">
+              <h3 class='h4 mt-2 fw-bold text-colored'>Suco</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugit tempora necessitatibus commodi facilis! Illo quibusdam atque delectus, sit rem cupiditate et.</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <img src="./imagens/cardapio/bebidas/coca-cola.jpg" class="w-100 rounded">
+              <h3 class='h4 mt-2 fw-bold text-colored'>Coca-cola</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugit tempora necessitatibus commodi facilis! Illo quibusdam atque delectus, sit rem cupiditate et.</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <img src="./imagens/cardapio/bebidas/coca-cola.jpg" class="w-100 rounded">
+              <h3 class='h4 mt-2 fw-bold text-colored'>Coca-cola</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugit tempora necessitatibus commodi facilis! Illo quibusdam atque delectus, sit rem cupiditate et.</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <img src="./imagens/cardapio/bebidas/coca-cola.jpg" class="w-100 rounded">
+              <h3 class='h4 mt-2 fw-bold text-colored'>Coca-cola</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugit tempora necessitatibus commodi facilis! Illo quibusdam atque delectus, sit rem cupiditate et.</p>
+            </div>
+        </div>
+        </div>
+        <div class="tab-pane fade" id="bebidasComAlcool" role="tabpanel" tabindex="0">
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <img src="./imagens/cardapio/bebidas/vinho.jpg" class="w-100 rounded">
+              <h3 class='h4 mt-2 fw-bold text-colored'>Vinho</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugit tempora necessitatibus commodi facilis! Illo quibusdam atque delectus, sit rem cupiditate et.</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <img src="./imagens/cardapio/bebidas/cerveja.jpg" class="w-100 rounded">
+              <h3 class='h4 mt-2 fw-bold text-colored'>Cerveja</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugit tempora necessitatibus commodi facilis! Illo quibusdam atque delectus, sit rem cupiditate et.</p>
+            </div>
+        </div>
+        </div>
+        <div class="tab-pane fade" id="entradas" role="tabpanel" tabindex="0">
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <img src="./imagens/cardapio/entradas/entrada.jpg" class="w-100 rounded">
+              <h3 class='h4 mt-2 fw-bold text-colored'>Entrada da casa</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugit tempora necessitatibus commodi facilis! Illo quibusdam atque delectus, sit rem cupiditate et.</p>
+            </div>
+        </div>
+        </div>
+        <div class="tab-pane fade" id="pratosPrincipais" role="tabpanel" tabindex="0">
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <img src="./imagens/cardapio/pizza.jpg" class="w-100 rounded">
+              <h3 class='h4 mt-2 fw-bold text-colored'>Pizza</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugit tempora necessitatibus commodi facilis! Illo quibusdam atque delectus, sit rem cupiditate et.</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <img src="./imagens/cardapio/pizza.jpg" class="w-100 rounded">
+              <h3 class='h4 mt-2 fw-bold text-colored'>Pizza</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugit tempora necessitatibus commodi facilis! Illo quibusdam atque delectus, sit rem cupiditate et.</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <img src="./imagens/cardapio/pizza.jpg" class="w-100 rounded">
+              <h3 class='h4 mt-2 fw-bold text-colored'>Pizza</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugit tempora necessitatibus commodi facilis! Illo quibusdam atque delectus, sit rem cupiditate et.</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <img src="./imagens/cardapio/pizza.jpg" class="w-100 rounded">
+              <h3 class='h4 mt-2 fw-bold text-colored'>Pizza</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugit tempora necessitatibus commodi facilis! Illo quibusdam atque delectus, sit rem cupiditate et.</p>
+            </div>
+        </div>
+        </div>
+        <div class="tab-pane fade" id="sobremesa" role="tabpanel" tabindex="0">
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <img src="./imagens/cardapio/sobremesas/bolo.jpg" class="w-100 rounded">
+              <h3 class='h4 mt-2 fw-bold text-colored'>Bolo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugit tempora necessitatibus commodi facilis! Illo quibusdam atque delectus, sit rem cupiditate et.</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <img src="./imagens/cardapio/sobremesas/cupcake.jpg" class="w-100 rounded">
+              <h3 class='h4 mt-2 fw-bold text-colored'>Cupcake</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugit tempora necessitatibus commodi facilis! Illo quibusdam atque delectus, sit rem cupiditate et.</p>
+            </div>
+        </div>
+        </div>
+      </div>
+  </section>
+  <section id="contact" class="container pt-5 pb-5">
+    <h2 class="text-center section-title">Fale <span class="text-colored">conosco</span></h2>
+      <div class="row">
+      <div class="col-md-7">
+        <form id="commentForm" class="text-colored fw-bold">
+          <div>
+          <label class="form-label mt-2">Seu nome</label>
+          <input class="form-control" name="nome" type="text" required>
+          </div>
+        <div>
+          <label  class="form-label mt-2" >Seu E-mail</label>
+          <input class="form-control" name="email" type="email" required>
+        </div>
+        <div>
+          <label class="form-label mt-2" >Seu telefone (Opcional)</label>
+          <input class="form-control" name="telefone" type="tel" id="tel">
+        </div>
+        <div>
+          <label class="form-label mt-2" >Sua mensagem</label>
+          <textarea class="form-control" required name="mensagem"></textarea>
+        </div>
+        <button class="btn btn-success mt-3">Enviar</button>
+        </form>
+      </div>
+      <div class="col-md-5">
+        <div class="row section-title text-colored">
+          <h3 class="fs-4 mt-2">
+            <i class="bi bi-hand-thumbs-up-fill"></i>
+            Redes sociais
+          </h3>
+          <ul id="social-links">
+            <li class="fs-5 list-group list-group-horizontal"> 
+              <a><i class="bi bi-instagram"></i></a>
+              <a><i class="bi bi-facebook me-2 ms-2"></i></a>
+              <a><i class="bi bi-youtube"></i></a>
+              <a><i class="bi bi-twitter ms-2"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="row mt-3">
+          <h3 class="text-colored fs-4 section-title">
+            <i class="bi bi-cursor-fill"></i>
+            Endereço
+          </h3>
+          <p>
+            Rua Teste Exemplo n°1245, Bairro Javascript - São Paulo - SP
+          </p>
+        </div>
+      </div>
+    </div>
+    </h2>
+  </section>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./lib/jquery.mask.min.js"></script>
+  <script src="./lib/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function(){
+     $('#tel').mask('(00) 00000-0000',{placeholder:'(00) 00000-0000'})
+
+     $("#commentForm").validate({
+  rules: {
+    name: "required",
+    email: {
+      required: true,
+      email: true
+    }
+  },
+  messages: {
+    nome: "Insira seu nome",
+    email: {
+      required: "Precisamos do seu e-mail para entrar em contato"
+    },
+    mensagem:{
+      required:'Escreva uma mensagem'
+    }
+  }
+})
+    })
+  </script>
+</body>
+
+</html>
